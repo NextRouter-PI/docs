@@ -1,5 +1,5 @@
 # Projeto Integrador - Modelo
-*(Coloque aqui o nome do seu projeto.)*
+*NextRouter*
 
 Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em Desenvolvimento de Sistemas para a Internet Integrado ao Ensino Médio do IFC - Campus Araquari.
 *(Coloque aqui uma breve descrição do seu projeto.)*
@@ -9,8 +9,13 @@ Um modelo para o desenvolvimento do Projeto Integrador do Curso de Técnico em D
 Professor: [Marco André Mendes](github.com/marcoandre)
 
 Equipe:
-- [Aluno1](github.com/aluno1)
-- [Aluno2](github.com/aluno2)
+
+- [Gabriela](github.com/GabrielaSenderski)
+- [Henrique](github.com/Henri0042007)
+- [Higor](github.com/higortab)
+- [Ian](github.com/IanMV)
+- [Maria](github.com/mariagtavres)
+- [Paulo](github.com/Pauloartur-23)
 
 Links do projeto:
 (*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
@@ -56,7 +61,7 @@ Uma ONG, chamada Sala Arco Íris, ajuda crianças de baixa renda em sua educaç�
 terem um computador e as estantes necessárias à disposição nessa nova biblioteca, não possuem verba suficiente para um leitor de impressão digital ou para produção
 de carteirinhas para todas as crianças. Para isso, eles precisam de um sistema que gerencie todo o acervo, empréstimos, livros disponíveis, etc. mas que isso ocorra de maneira simples e sem necessidade de novos gastos. Também é importante que haja relatórios, permitindo o controle dos empréstimos e dos livros disponíveis no acervo.
 
-**1.1.3 Ordem de Serviço (O.S.)**
+**1.1.3 Ordem de Serviço (O.S.)** (escolhida)
 
 **Manutenção de computadores**
 
@@ -86,6 +91,7 @@ Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa s
 -   **Conclusão**: tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia ajudar a resolvê-los.
 
 # 3. Descrição da proposta
+Sistema com objetivo de gerenciar transportes escolares em geral, permitindo que cada empresa cadastre seus dados. Funcionará oferecendo formas de organização de rotas, veículos e passageiros.
 
 Após entender o problema, proponha uma solução que será útil nos aspectos de dificuldade encontrados. Assim, aqui você deverá **explicar de maneira resumida, e preferencialmente mais textual, como o software funcionará**. Pense nesse texto como uma **introdução ao seu cliente** do que você pretende fazer por ele, para que ele confirme se realmente está dentro do desejado e permita sua continuidade.
 
