@@ -6,16 +6,16 @@ O NextRouter é pensado para a organização e gerenciamento de transportes esco
 
 **IMPORTANTE**: [**Cadastre seu projeto nesta planilha**](https://docs.google.com/spreadsheets/d/1bSb1-S9qOf46fNH8quyoFpcjcTuBMj_EdSPchOuFULY/edit?usp=sharing).
 
-Professor: [Marco André Mendes](github.com/marcoandre)
+Professor: [Marco André Mendes](https://github.com/marrcandre)
 
 Equipe:
 
-- [Gabriela](github.com/GabrielaSenderski)
-- [Henrique](github.com/Henri0042007)
-- [Higor](github.com/higortab)
-- [Ian](github.com/IanMV)
-- [Maria](github.com/mariagtavres)
-- [Paulo](github.com/Pauloartur-23)
+- [Gabriela](https://github.com/GabrielaSenderski)
+- [Henrique](https://github.com/Henri0042007)
+- [Higor](https://github.com/higortab)
+- [Ian](https://github.com/IanMV)
+- [Maria](https://github.com/mariagtavres)
+- [Paulo](https://github.com/Pauloartur-23)
 
 Links do projeto:
 (*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
