@@ -33,26 +33,14 @@ Sr. Sálvio, nosso cliente, fez um curso de manutenção de celulares e smartpho
 
 # 2. Situação Problema
 
-*(Nessa parte a equipe deve descrever a situação problema que será resolvida pelo sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.)*
+A SulTurismo e a IndyTour são dois exemplos de transporte escolar que atuam no trajeto de Joinville até o IFC - Câmpus Araquari, mas de forma muito semelhante à todas as outras corporações de veículos escolares. Essa organização interna pode ser melhorada em diversos quesitos, para o conforto do aluno e praticidade da gestão.
 
-![Ciclo da Venda](docs/ciclo_da_venda.webp "Ciclo da Venda")
+Atualmente, essas empresas fazem seu gerenciamento de forma externa, por exemplo, via whatsapp. Dessa maneira, o contratante precisa, por conta própria, buscar informações sobre quais corporações oferecem o transporte do indivíduo até o destino desejado. Isso faz com que menos pessoas tenham acesso à esse meio de locomoção e por vezes até percam oportunidades pela falta de conhecimento.
 
-Descrevem o que acontece atualmente na empresa em um contexto global,
-abordando o funcionamento da empresa como um todo, não apenas os “problemas” que lá ocorrem.
+Na aplicação do serviço as coisas são feitas de maneira improvisada, utilizando o que tem à disposição. Os responsáveis pelas rotas do dia têm de anotar tudo manualmente em um caderno, os alunos avisam o horário de retorno – se houver – por listas no whatsapp, o motorista do transporte precisa compartilhar sua localização no horário de embarque também pela rede social, etc. Isso faz viável um site que facilite as demandas.
 
-Sabendo disso, seu papel é **detalhar o funcionamento da empresa escolhida na
-atualidade, ou seja, antes de seu novo software**, usando como base a situação que passamos, mas aprofundando os detalhes de como as coisas acontecem.
+Portanto, é mister que essa organização seja otimizada em um único lugar, e nossa proposta é oferecer uma plataforma web que concentre todas as necessidades das várias personalidades que utilizam desses transportes escolares – gerentes, motoristas e passageiros – de forma à sintetizar cada um dos requerimentos das partes em um lugar só, facilitando o acesso, informação e administração.
 
--   Pesquise sobre empresas do ramo escolhido
-    para entender como funcionam;
--   Aproveite seus conhecimentos previamente adquiridos na área da empresa que escolheu, se houver;
--   Simule uma situação real. Lembre-se que são propostas com empresas fictícias, sendo assim, você terá que tomar certas decisões sobre como a empresa funciona em relação às coisas que não estão definidas no documento base (por exemplo, no caso da padaria, dizemos que seu Genival contratou mais funcionários, mas saber quantos e o que fazem pode ser relevante para o software), então tente “visualizar” a empresa funcionando, como se você estivesse lá acompanhando o dia-a-dia;
-
-Seguindo essas dicas, você deve ser capaz de descrever o dia-a-dia da empresa selecionada. E para ajudar na organização do texto, indicamos uma abordagem em 3 etapas:
-
--   **Introdução**: comece com um parágrafo apresentando a empresa (nome, o que faz, tempo de existência, o dono, funcionários, etc);
--   **Situação-problema**: Aborde em detalhes como a empresa funciona, procurando seguir uma ordem lógica dos acontecimentos e organizando parágrafos diferentes para cada coisa diferente que for explicar (como faria em uma redação);
--   **Conclusão**: tenha um parágrafo de conclusão focando nos problemas que você notou dentro da situação problema analisada e aponte brevemente como um software poderia ajudar a resolvê-los.
 
 # 3. Descrição da proposta
 
