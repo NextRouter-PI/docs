@@ -137,151 +137,172 @@ repassar ao cliente para aprovação, e caso o cliente aprovar, a atendente deve
 - **RN09 – Relatório de Fluxo de Caixa:** O relatório de fluxo de caixa será permitido somente para o administrador.
 
 # 5. Requisitos funcionais
-(*Nessa parte a equipe deve descrever os requisitos funcionais que serão implementados no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
+### Níveis de acesso:
+- **Visitante*** - Todo e qualquer usuário que esteja usando o sistema e não esteja autenticado.
+- **Passageiro** - O usuário que esteja autenticado como passageiro associado a uma empresa.
+- **Motorista** - O usuário que esteja autenticado como motorista associado a uma empresa.
+- **Empresa** - O usuário que esteja autenticado como empresa.
+Sistema - O sistema acessa essa funcionalidade.
 
-**5.1 O que são requisitos funcionais?**
 
-Um requisito funcional é uma declaração de como um sistema deve se comportar. Define o que o sistema deve fazer para atender às necessidades ou expectativas do usuário. Os requisitos funcionais podem ser pensados ​como recursos que o usuário detecta.
+### Entradas:
+**R.F 01 - Acessar o Painel de Configurações de Preferências e Acessibilidade:** O sistema deve permitir que o usuário ajuste configurações visuais e de navegação. Este requisito garante a inclusão de usuários com necessidades especiais desde o primeiro contato com a plataforma.
+- Dados de entrada: nível de contraste, tamanho da fonte, filtros de daltonismo, altura da linha, redução de movimento.
+- Usuários: nível visitante de acesso.
 
-Os requisitos funcionais são compostos de duas partes:
-**função** e **comportamento**.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-- A **função** é o que o sistema **faz**. Por exemplo: *“calcular imposto sobre vendas”*.
-- O **comportamento** é **como** o sistema faz. Por exemplo: *“O sistema deve calcular o imposto sobre vendas multiplicando o preço de compra pela alíquota do imposto.”*.
 
-**5.2 Tipos de requisitos funcionais**
+**R.F 02 - Solicitação de Contrato (Motorista/Passageiro):** O sistema deve permitir que o visitante escolha uma empresa específica e solicite um vínculo de contrato como passageiro ou como motorista. Isso formaliza a intenção de adesão ao serviço da empresa selecionada.
+- Dados de entrada: tipo de vínculo (passageiro ou motorista), contato de telefone, contato de email, endereço.
+- Usuários: nível visitante de acesso.
+  
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-Os requisitos funcionais podem ser classificados em:
+**R.F 03 - Envio de Cadastro (Motorista/Passageiro):** O sistema deve permitir que o visitante preencha e envie seus dados pessoais para registro. Este requisito é o passo final do visitante para se tornar um usuário do sistema, aguardando validação posterior.
+- Dados de entrada: nome completo, CPF, e-mail, telefone, endereço.
+- Usuários: nível visitante de acesso.
 
-- Regulamentos de Negócios
-- Requisitos de Certificação
-- Requisitos de relatório
-- Funções Administrativas
-- Níveis de autorização
-- Rastreamento de auditoria
-- Interfaces Externas
-- Gestão de dados
-- Requisitos Legais e Regulamentares
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**5.3 Diretrizes para a elaboração de requisitos funcionais**
 
-Cada requisito funcional precisa ser:
+**R.F  04 - Confirmação de Presença em Rotas (Ida/Volta):** O sistema deve permitir que o passageiro confirme sua participação na rota de volta atual e na rota de ida do dia seguinte. Este requisito permite a otimização da logística, garantindo que o motorista não realize paradas em endereços onde não haverá embarque.
+- Dados: status de confirmação (confirmado/ausente), identificação da rota.
+- Usuários: nível passageiro de acesso.
 
-- **Específico** sobre o que o sistema deve fazer.
-- **Mensurável** para que você possa dizer se o sistema está fazendo isso
-- **Alcançável** dentro do prazo que você definiu
-- **Relevante** para seus objetivos de negócios
-- **Limitado** no tempo para que você possa
-acompanhar o progresso
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**5.4 Estrutura do requisito funcional**
 
-Um requisito funcional deve ser estruturado da seguinte forma:
+**R.F 05 - Registro de Itens Perdidos:** O sistema deve oferecer um formulário para que o passageiro relate a perda de objetos no transporte. Este requisito centraliza a comunicação de achados e perdidos, aumentando as chances de recuperação dos itens. 
+- Dados: descrição do item, data do ocorrido, turno da rota.
+- Usuários: nível passageiro de acesso.
 
-- **Nome do requisito funcional:** descrição do
-requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**5.4.1 Nome do requisito funcional**
+**R.F 06 - Acionamento de Início de Rota:** O sistema deve permitir que o motorista registre o início oficial das rotas de ida e de volta. Esse gatilho é essencial para que o sistema comece o monitoramento e notifique os passageiros que o transporte está a caminho. 
+- Dados: ID da rota, horário de início, quilometragem inicial (opcional).
+- Usuários: motorista.
 
-**R.F. 99 - Nome do requisito funcional:** é o nome da função que o software terá. Sugerimos, por padronização, que tenha o prefixo R.F. (requisito funcional)
-seguida da numeração, para melhor identificação do requisito, acrescido do formato *“Substantivo + onde será feita a ação”*.
-Por exemplo:
-- R.F. 01 - Registro de Funcionários
-- R.F. 15 - Gerenciamento de consultas
-- R.F. 04 - Débito em conta corrente
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-Deixe para definir as numerações ao final, tendo em vista que mudanças podem acontecer e não é prático sempre ficar reajustando os números.
 
-**5.4.2 Descrição do requisito funcional**
+**R.F 07 - Edição de Informações de Perfil:** O sistema deve permitir que Empresa, Passageiro e Motorista editem seus dados. Este requisito garante que informações de contato, endereço e perfil estejam sempre atualizadas. 
+- Dados: nome, telefone, endereço, documentos.
+- Usuários: empresa, passageiro, motorista.
 
-**Descrição do requisito:** local para descrever a função deste requisito.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-Sempre se preocupe em esclarecer dois pontos: o que o requisito faz e o motivo de sua existência. Isso é especialmente importante se a ação executada nesse requisito não for algo que já acontece naturalmente na empresa.
-Um exemplo é um Registro de funcionários, que talvez não exista hoje mas para o software é necessário para viabilizar uma autenticação de
-usuários. Outro exemplo é algo que faz sentido apenas para um  software, como a própria autenticação.
 
-**5.4.3 Dados necessários**
+**R.F 08 - Acesso ao Painel de Configurações de Conta:** O sistema deve disponibilizar um painel para gestão de credenciais e segurança. Este requisito é uma pré-condição para a manutenção da conta de qualquer usuário autenticado.
+- Dados de entrada: e-mail de login, senha, configurações de privacidade.
+- Usuários: níveis de passageiro, motorista e empresa de acesso.
 
-**Dados necessários:** aqui devem ser colocados os nomes dos dados que serão usados para que esse requisito atenda o que precisa fazer.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-Nas **entradas** e **processos**, em geral, são os dados que serão salvos (seja algo digitado pelo usuário ou captado do sistema, como a hora atual).
 
-Já nas **saídas**, são os dados que serão exibidos em tela (sejam eles vindos diretamente do banco, ou criados por um cálculo ou busca na sessão do usuário).
+**R.F 09 - Solicitação de Cadastro de Nova Empresa:** O sistema deve permitir que representantes de empresas solicitem sua adesão à plataforma. Este requisito inicia o processo de triagem para que a empresa possa oferecer seus serviços de logística no ecossistema.
+- Dados de entrada: nome fantasia, cnpj, email corporativo, telefone de contato, responsável.
+- Usuário: nível visitante de acesso.
 
-**5.4.4 Usuários**
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**Usuários:** aqui devem ser colocados os nomes dos usuários que terão acesso a esse requisito, conforme enumerados na descrição do sistema.
+### Processos:
 
-**5.4.5 Exemplo de requisito funcional**
+**R.F 10 - Restaurar Configurações de Preferências e Acessibilidade:** O sistema deve permitir que o visitante possa restaurar configurações de acessibilidade para o padrão em um único clique. Este requisito previne que usuários comprometam sua experiência alterando configurações erradamente.
+- Dados de entrada: nível de contraste, tamanho da fonte, filtros de daltonismo, altura da linha, redução de movimento.
+- Usuários: nível visitante de acesso.
 
-- **R.F. 01 - Autenticação de usuário:** tem como propósito autenticar o acesso ao sistema, verificando se o usuário pode acessá-lo e, caso possa, o direcionando
-para a página principal de seu perfil de acesso.
-  - **Dados necessários:** login, senha, nível de permissão.
-  - **Usuários:** todos os níveis de usuário.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**5.4.6 Organização dos requisitos funcionais**
+**R.F 11 - Cálculo de Rotas e Designação de Motoristas:** O sistema deve calcular as rotas tanto de ida quanto de volta, e designar os melhores motoristas para cada rota. Este requisito garante a… 
+- Dados de saída: rota, motorista.
+- Usuários: níveis de motorista, passageiro, empresa e sistema de acesso.
+  
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-As funcionalidades devem ser organizadas em: entradas, processos e saídas.
 
-**Entradas:** São as funcionalidades que alimentarão o software com as informações essenciais para seu uso.
+**R.F 12 - Consulta de Empresas:** O sistema deve permitir que o visitante busque por empresas no sistema. Este requisito é fundamental para que interessados em transporte possam verificar quais empresas operam na plataforma.
+- Dados de entrada: nome da empresa, localização, filtros de busca.
+- Usuários: nível visitante de acesso.
 
-**Exemplos de entradas:**
-- “**Registro de usuário**” (para permitir depois seu acesso ao software).
-- “**Registro de paciente**” (que seria útil caso nosso software fosse ppara uma clínica, evitando registrar várias vezes os mesmos dados da pessoa a cada consulta e viabilizando um histórico de seus
-atendimentos).
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**Processos:** Em geral, englobam toda ação que executa cálculos, processamentos de tomada de decisão ou transforma dados em novos dados.
 
-**Exemplos de processos:**
-- “**Autenticação de usuário**”, que usará os dados de “**Registro de usuário**” em sua execução.
-- “**Agendamento de consulta**”, que usará dados do “**Registro de paciente**” e talvez do “**Registro de funcionário**” em sua execução.
+**R.F 13 - Aprovação de Novos Usuários (Motorista/Passageiro):** O sistema deve permitir que a empresa aprove ou rejeite as solicitações de novos integrantes. Este requisito garante a moderação e segurança, permitindo que apenas pessoas autorizadas pela administração da empresa utilizem a logística de transporte.
+- Dados de saída: status da aprovação (aprovado/rejeitado), motivo da rejeição (opcional).
+- Usuários: nível empresa de acesso.
 
-**Saídas:** São os relatórios, gráficos, impressões, etc., que utilizarem os dados do software para gerar informações pertinentes ao
-negócio, mas sem intenção de alterá-los, apenas permitindo sua visualização e filtragem.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**Exemplos de saídas:**
-- “Relatório de consultas por paciente”.
-- Relatório de vendas”.
-- “Log de usuários autenticados”.
+**R.F 14 - Autenticação de Usuário (Login):** O sistema deve permitir a validação de credenciais de usuário. Este requisito é essencial para o acesso seguro às funcionalidades do sistema de acordo com o tipo de acesso (acesso de passageiro, motorista ou empresa).
+- Dados de entrada: email cadastrado, senha da conta.
+- Usuário: nível visitante de acesso.
 
-Todos esses podem ser consideradas saídas, pois usam informações de entradas e processos de modo a mostrar informações relevantes ao
-negócio. Lembre-se que, diferentemente das entradas e processos, aqui os dados necessários devem ser os que a tela exibirá.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**5.4.7 Exemplo de organização dos requisitos funcionais**
+**R.F 15 - Recuperação de Senha:** O sistema deve fornecer um fluxo para que usuários que esqueceram sua senha possam redefini-la. Este requisito é essencial para garantir que o usuário possa ter acesso aos serviços prestados mesmo que tenha esquecido a credencial de senha.
+- Dados de entrada: credencial de email da conta a se recuperar, código de verificação enviado por email, nova senha. 
+- Usuário: nível visitante de acesso.
 
-(_A seguir, um exemplo de organização de requisitos funcionais, com entradas, processos e saídas._)
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**Entradas:**
+**R.F 16 - Finalização de Rota:** O sistema deve permitir que uma rota seja finalizada. É um gatilho essencial para que as rotas não fiquem pendentes no sistema e com isso o relatório da viagem seja feito e o registro de itens perdidos seja enviado.
+- Dados de saída: conclusão de rota, relatório de viagem.
+- Usuários: nível motorista de acesso.
 
-- **R.F. 01 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-- **R.F. 02 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**R.F 17 - Aprovação de Novas Empresas:** O sistema deve permitir que o administrador valide os dados e documentos de empresas pendentes, autorizando ou negando seu acesso operacional à plataforma. Este processo assegura que apenas entidades jurídicas verificadas possam gerenciar rotas e funcionários. 
+- Dados de entrada: status da análise (aprovado/reprovado), justificativa ou observações da decisão, ID da empresa solicitante. 
+- Usuários: nível sistema de acesso. 
 
-**Processamento:**
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-- **R.F. 03 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+### Saída:
+**R.F 18 - Geração de Link de Cadastro (Motorista/Passageiro):** O sistema deve permitir que a Empresa gere links únicos para convite de novos membros. Isso garante que a empresa tenha controle sobre quem tenta se cadastrar sob seu domínio, servindo como uma primeira camada de segurança e convite oficial.
+- Dados de entrada: tipo de perfil vinculado ao link (motorista/passageiro), data de expiração, dados prévios informados pelo visitante durante a solicitação de contrato.
+- Usuários: nível empresa de acesso.
 
-- **R.F. 04 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
-**Saídas:**
 
-- **R.F. 05 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**R.F 19 - Anúncio de Vagas de Motorista:** O sistema deve permitir que a empresa publique oportunidades para novos motoristas. Isso facilita a expansão da frota e a captação de prestadores de serviço interessados diretamente na plataforma.
+- Dados de entrada: descrição da vaga, requisitos, região de atuação, número de vagas.
+- Usuários: nível empresa de acesso.
 
-- **R.F. 06 - Nome do requisito funcional:** descrição do requisito.
-  - **Dados necessários:** dado 1, dado 2, dado 3.
-  - **Usuários:** todos os níveis de usuário.
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
+
+
+**R.F  20 - Confirmação de Presença em Rotas (Ida/Volta):** O sistema deve permitir que o passageiro confirme sua participação na rota de volta atual e na rota de ida do dia seguinte. Este requisito permite a otimização da logística, garantindo que o motorista não realize paradas em endereços onde não haverá embarque.
+- Dados de entrada: status de confirmação (confirmado/ausente), identificação da rota.
+- Usuários: nível passageiro de acesso.
+
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
+
+**R.F 21 - Geração de Link de Cadastro para Empresas:** O sistema deve permitir a geração de links únicos para convite de novas empresas. Isso garante o controle sobre quem tenta cadastrar uma nova empresa, servindo como uma camada de segurança a fim de evitar spam.
+- Dados de entrada: data de expiração, dados prévios informados pelo visitante durante a solicitação do cadastro.
+- Usuários: nível sistema de acesso.
+
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
+
+
+**R.F 22 - Notificação de Proximidade:** O sistema deve disparar alertas automáticos (push) para o passageiro quando o veículo designado estiver a uma distância ou tempo pré-configurado do seu ponto de embarque. Este recurso otimiza o tempo do usuário e evita esperas desnecessárias em via pública. 
+- Dados de entrada: coordenadas GPS do veículo em movimento, localização do ponto de embarque do passageiro, raio de distância de alerta (em metros ou minutos).
+- Usuários: nível passageiro de acesso .
+
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
+
+**R.F 23 - Acompanhamento em Tempo Real (Passageiro):** O sistema deve fornecer uma interface de mapa interativo onde o passageiro possa visualizar a posição atual do veículo durante a execução de uma rota ativa. Isso garante transparência e previsibilidade sobre o andamento do trajeto e horários de chegada. 
+- Dados de entrada: sinal de geolocalização do dispositivo do motorista, identificador da rota vinculada. 
+- Usuários: nível passageiro de acesso. 
+  
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
+
+**R.F 24 - Visualização de Rota Ativa (Motorista):** O sistema deve exibir ao motorista o trajeto completo a ser percorrido, indicando visualmente os pontos de parada, a sequência de embarque/desembarque e o destino final. O objetivo é auxiliar a navegação e garantir que nenhum ponto de atendimento seja ignorado.
+- Dados de entrada: lista de coordenadas dos pontos de parada, mapa cartográfico da região, posição GPS atual. 
+- Usuários: nível motorista de acesso. 
+
+**(Criação: 16:45 20/03/2026; Última modificação: 16:45 20/03/2026; Versão: 1)**
 
 # 6. Requisitos não funcionais
 
