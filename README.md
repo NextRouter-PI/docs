@@ -53,11 +53,20 @@ O software disponibilizará cadastro de empresa e usuário, informações de con
 
 # 4. Modelagem de Dados
 
-(*Nessa parte a equipe deve descrever a modelagem de dados que será implementada no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
+<img src="./img/DER.png" alt="Diagrama de Entidade-Relacionamento" width="800">
 
-Defina as entidades e relacionamentos que farão parte do sistema. Desenhe o diagrama de entidade-relacionamento (DER) e descreva as entidades e relacionamentos que farão parte do sistema.
+Descrição das tabelas:
 
-
+- **System admins:** Essa tabela registra administradores que terão a permissão de analisar as solicitações de cadastro de empresa. Tendo campos de identificação e credenciais para autenticação (login) no sistema.
+- **Company admins:** Essa tabela registra administradores que terão a permissão de concluir processos de cadastro e acesso às configurações da empresa. Tendo campos de identificação e credenciais de autenticação (login) no sistema.
+- **Company admin permissions:** Essa tabela registra permissão e se relaciona com os administradores do sistema. Tendo campos de permissões concedidas ao administrador.
+- **Register links:** Essa tabela registra links criados conseguintes de solicitações de contrato ou de solicitações de criação de empresa para visitantes poderem acessar telas de cadastro. Tendo como campos o acesso e tempos de controle de uso do link.
+- **Contract requests:** Essa tabela registra as solicitações de contrato de visitante, para que administradores da empresa contratuante possa analisar legitmidade. Tendo campos com informações úteis para prosseguir com o cadastro.
+- **Drivers:** Essa tabela registra motoristas vinculados à empresa. Tendo campos de credênciais para autenticação (login) no sistema.
+- **Profiles** Essa tabela registra perfis de motoristas ou de passageiros. Tendo campos de identificação.
+- **Route groups:** Essa tabela registra as áreas de atuação das empresas. Tendo campos de localização e identificação.
+- **Companies:** Essa tabela registra as empresas. Tendo campos de dados de credenciamento.
+- **Company profile:** Essa tabela registra o perfis das empresas. Tendo campos de identificação.
 
 # 4. Regras de negócio
 (*Nessa parte a equipe deve descrever as regras de negócio que serão implementadas no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
