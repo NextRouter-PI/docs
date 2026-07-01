@@ -20,8 +20,8 @@ Equipe:
 Links do projeto:
 (*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
 -   [Documentação (esse documento)](https://github.com/NextRouter-PI/docs)
--   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://pi-backend.herokuapp.com/)
--   Frontend: [Repositório](https://github.com/NextRouter-PI/Frontend-NextRouter) e [Publicação](https://pi-frontend.herokuapp.com/)
+-   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br)
+-   Frontend: [Repositório](https://github.com/NextRouter-PI/Frontend-NextRouter) e [Publicação](https://frontend-next-router-ruby.vercel.app/login)
 -   Frontend-Admin: [Repositório](https://github.com/NextRouter-PI/Frontend-Admin) e [Publicação](https://frontend-admin-eta-two.vercel.app/)
 
 # 1. Desenvolvimento
