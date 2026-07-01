@@ -22,6 +22,7 @@ Links do projeto:
 -   [Documentação (esse documento)](https://github.com/NextRouter-PI/docs)
 -   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://pi-backend.herokuapp.com/)
 -   Frontend: [Repositório](https://github.com/NextRouter-PI/Frontend-NextRouter) e [Publicação](https://pi-frontend.herokuapp.com/)
+-   Frontend-Admin: [Repositório](https://github.com/NextRouter-PI/Frontend-Admin) e [Publicação](https://frontend-admin-eta-two.vercel.app/)
 
 # 1. Desenvolvimento
 
