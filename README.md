@@ -20,7 +20,7 @@ Equipe:
 Links do projeto:
 (*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
 -   [Documentação (esse documento)](https://github.com/NextRouter-PI/docs)
--   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br/)
+-   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br/api/)
 -   Frontend: [Repositório](https://github.com/NextRouter-PI/Frontend-NextRouter) e [Publicação](https://next-router-frontend.vercel.app/)
 -   Frontend-Admin: [Repositório](https://github.com/NextRouter-PI/Frontend-Admin)
 
