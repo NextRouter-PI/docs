@@ -18,11 +18,45 @@ Equipe:
 - [Paulo](https://github.com/Pauloartur-23)
 
 Links do projeto:
-(*Coloque aqui os links para a documentação do projeto e os repositórios e plubicação do backend e frontend.*)
 -   [Documentação (esse documento)](https://github.com/NextRouter-PI/docs)
--   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br/api/)
--   Frontend: [Repositório](https://github.com/NextRouter-PI/Frontend-NextRouter) e [Publicação](https://next-router-frontend.vercel.app/)
+-   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br/admin/)
+-   Frontend: [Repositório](https://github.com/NextRouter-PI/Frontend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br/login/)
 -   Frontend-Admin: [Repositório](https://github.com/NextRouter-PI/Frontend-Admin)
+
+Usuários de Teste:
+
+- Administrador
+  - E-mail: admin@admin.com
+  - Senha: teste.123
+
+- Passageiro 1
+  - E-mail: henrique.santiago.sb@gmail.com
+  - Senha: teste.123
+
+- Passageiro 2
+  - E-mail: ianmatheusv54@gmail.com
+  - Senha: teste.123
+
+- Passageiro 3
+  - E-mail: gabrielasenderski.ifc@gmail.com
+  - Senha: teste.123
+
+- Passageiro 4
+  - E-mail: mariagoncalves.ifc.araquari@gmail.com
+  - Senha: teste.123
+
+- Passageiro 5
+  - E-mail: higor.tabraga@gmail.com
+  - Senha: teste.123
+
+- Motorista
+  - E-mail: pauloartur.ifc@gmail.com 
+  - Senha: teste.123
+
+- Empresa
+  - E-mail: nextrouter@gmail.com
+  - Senha: teste.123
+
 
 ### Para a apresetação, favor baixar o PDF abaixo:
 
