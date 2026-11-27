@@ -21,7 +21,6 @@ Links do projeto:
 -   [Documentação (esse documento)](https://github.com/NextRouter-PI/docs)
 -   Backend: [Repositório](https://github.com/NextRouter-PI/Backend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br/admin/)
 -   Frontend: [Repositório](https://github.com/NextRouter-PI/Frontend-NextRouter) e [Publicação](https://nextrouter.class.fabricadesoftware.ifc.edu.br/login/)
--   Frontend-Admin: [Repositório](https://github.com/NextRouter-PI/Frontend-Admin)
 
 Usuários de Teste:
 
